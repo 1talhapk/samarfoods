@@ -13,6 +13,8 @@ html{
 #navbar {
   font-family: "baloo bhai";
   top: 0;
+    position: -webkit-sticky;
+
   position: sticky;
   display: flex;
   align-items: center;

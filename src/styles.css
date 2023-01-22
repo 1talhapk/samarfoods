@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /* CSS varibles */
@@ -13,6 +13,7 @@ html{
 #navbar {
   font-family: "baloo bhai";
   top: 0;
+  position: -webkit-sticky;
   position: sticky;
   display: flex;
   align-items: center;
@@ -46,7 +47,6 @@ html{
   background-color: white;
   color: black;
 }
-
 
 /* Navigation: Logo styles */
 
@@ -161,7 +161,7 @@ html{
   padding: 30px;
   width: 150px;
   position: relative;
-  content: "eraefd";
+  z-index: -1;
 }
 .clients div div::before {
   --width: 140px;
@@ -194,23 +194,24 @@ html{
     "c d"
     "e e ";
 }
-.contact-form .gridItem input, .contact-form .gridItem textarea{
-    border: none;
-    outline: none;
-    border: 2px solid brown;
-    border-radius: 5px;
-    padding:  5px 10px;
-    
+.contact-form .gridItem input,
+.contact-form .gridItem textarea {
+  border: none;
+  outline: none;
+  border: 2px solid brown;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
-.contact-form .gridItem input:focus, .contact-form .gridItem textarea:focus{
-    box-shadow: 0 0 15px brown;
+.contact-form .gridItem input:focus,
+.contact-form .gridItem textarea:focus {
+  box-shadow: 0 0 15px brown;
 }
-.contact-form .gridItem textarea{
-    height: 100%;
-    resize: none;
+.contact-form .gridItem textarea {
+  height: 100%;
+  resize: none;
 }
-.contact-form div label{
-    padding: 5px 0px;
+.contact-form div label {
+  padding: 5px 0px;
 }
 .contact-form .gridItem1 {
   grid-area: a;
